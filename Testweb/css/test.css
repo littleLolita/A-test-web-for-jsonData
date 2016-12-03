@@ -1,0 +1,100 @@
+body{
+	background-image: url("../images/back1.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.top {
+	width: 100%;
+}
+.main-box{
+	width: 100%;
+	display: block;
+	background-color: rgba(124,152,179,0.5);
+	border-radius: 9px;
+	border: 15px solid rgba(34,82,122,0.8);
+	border-top-width: 40px;
+	border-bottom-width: 15px;
+	padding: 20px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	font-size: 18px;
+	font-family:"microsoft yahei";
+	
+}
+.main-box .title p{
+	width: 100%;
+	margin-left: -80px;
+    color:  #f1ebe5;
+    text-shadow: rgb(255, 255, 255) 0px 1px 2px, rgb(51, 51, 51) 0px -2px 1px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-shadow: 0 1px 2px #fff, 0px -2px 1px #333;
+    font-family:"microsoft yahei","经典圆体繁" , "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:5px;
+}
+.main-box .title .getTime{
+	float: right;
+	margin-top: -35px;
+	color: white;
+	font-size: 15px;
+	font-weight: lighter;
+}
+.main-box  label {
+	text-align: left;
+	color: white;
+	font-weight: normal;
+} 
+.main-box  .result {
+	overflow-y:auto;
+	overflow-x:auto;
+	height:380px;
+	margin-top:8px;
+	border-radius: 3px;
+	border:1px solid #ffffff;
+
+}
+.main-box .testStatus {
+	width: 100%;
+	margin-left: 0px;
+	border: solid 2px rgba(34,82,122,0.5);
+	border-collapse: collapse;
+}
+.main-box .testStatus th{
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	background: rgba(34,82,122,0.7);
+
+}
+.main-box .testStatus td{
+	font-size: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+.main-box .testStatus th, .main-box .testStatus td {
+	text-align: center;
+	border:solid 2px rgba(34,82,122,0.5);
+	padding: 3px 7px 2px 7px;
+}
+.main-box .testStatus tr:nth-of-type(odd) {
+	background-color: rgba(207,210,221,0.5);
+}
+.main-box .testStatus tr:hover{
+	background-color: white;
+}
+.infoDiv{
+	padding: 0 !important;
+}
+.infoDiv {
+	border-bottom: 1px solid rgba(34,82,122,0.5);
+}
+
+table div:last-child{
+	border-bottom: none;
+}
+
+

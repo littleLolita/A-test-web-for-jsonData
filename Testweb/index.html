@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>测试</title>
+	<link rel="stylesheet" href="css/bootstrap-3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script data-main="config" src="js/require.js"></script>
+</head>
+<body class="container-fluid">
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<div class="main">
+				<div class="title">Result</div>
+				
+				<div class="middle">
+					<div class="datalist">
+						<table class="table" id="dataList">
+							<colgroup>
+								<col width="5">
+								<col width="10%"/>
+								<col width="40%">
+								<col width="40%"/>
+							</colgroup>
+					        <tr id="thead">
+					        	<th><input type="checkbox"></th>
+					         	<th>NO</th>
+					         	<th>KeyName</th>
+					         	<th>Imformation</th>
+					        </tr>
+					        <tr id="open">
+					        	<td>...</td>
+					        	<td>...</td>
+					        	<td>...</td>
+					        	<td>...</td>
+					        </tr> 
+						</table>
+					</div>
+					<div class="btx">
+					    <button class="btn btn-info" id="checkAll" data-flag="false">查看全部</button>
+						<button class="btn btn-info" id="compare">开始比较</button>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+	
+</body>
+</html>
