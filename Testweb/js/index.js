@@ -4,7 +4,7 @@ define([], function() {
 		$(function(){
 
 			var getData = function(){			
-				$.get("data1.json").success(function(data) {
+				$.get("./js/lib/data.json").success(function(data) {
 					tempData = data;
 					generatingTableVersion(data);
 				});
@@ -21,21 +21,20 @@ define([], function() {
 						arr.push(obj);					
 					}
 				});
-				//generatingData(arr);
 				
-				console.log(22222,arr);
-				arr=JSON.stringify(arr); //将数组对象
-
-				window.localStorage.setItem("compareArr",arr);
-				if(!arr.length==0){
-					window.location.href="test.html";
+				if(arr.length==0) { 
+					console.log('please choose!');
+					return
 				}			
+				arr=JSON.stringify(arr);
+				window.localStorage.setItem("compareArr",arr);
+				window.location.href="main.html";
 			});
 
 			var generatingTableVersion = function(data){
 				var trStr = "<tr ><td><input type='checkbox'></td><td class='number'>{number}</td><td>{keyname}</td><td class='infomation'>{values}</td></tr>";
 				var count=0;
-				var n=20;
+				var n=1;
 
 				var L = data.length;
 				var str = "";

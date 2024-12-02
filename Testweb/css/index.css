@@ -9,7 +9,6 @@ body{
 	background-color: rgba(34,82,122,0.8); 
 	border-radius: 9px;
 	border: 8px solid rgba(34,82,122,0.8);
-	/* border-top-width: 60px; */
 	border-bottom-width: 18px;
 	padding: 0px;
 	font-size: 20px;
@@ -18,7 +17,6 @@ body{
 }
 .main .title{
 	width: 100%;
-	/* margin-left: -95px; */
     color:  #f1ebe5;
     background-color: rgba(124,152,179,0.9);
     border-radius: 9px;
@@ -29,8 +27,6 @@ body{
     text-shadow: 0 1px 2px #fff, 0px -2px 1px #333;
     font-family:"microsoft yahei","经典圆体繁" , "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     font-size: 40px;
-  /*   position: absolute;
-  top:6px; */
 }
 .main button {
 	padding: 0px;

@@ -115,7 +115,7 @@ define([], function() {
 			return arrNew;
 		}
 		B=[[1,2,3,4,5],[2,3,4,5,6],[3,4,5,6,7]];
-		console.log(compare.transform(B));
+		// console.log(compare.transform(B));
 		/**
 		 * [renderTable 渲染表格]
 		 * @return {[type]} [description]
@@ -132,7 +132,7 @@ define([], function() {
 			}
 			//去掉了重复元素，左侧属性名的并集
 			A=compare.noRepeat(A);
-			console.log("去重之后的属性列表",A);
+			// console.log("去重之后的属性列表",A);
 
 			var arrList=[];
 			var Matrix=[];
@@ -140,7 +140,6 @@ define([], function() {
 			for(var i=0;i<=L-1;i++){ //i就是遍历几列
 				Matrix[i]=[];
 				arrList[i]=compare.list2Map(jsondata[i].case_list);
-				console.log(arrList[i]);
 				var M=A.length;
 				for(var j=0;j<=M-1;j++){
 					var obj=arrList[i][A[j]]; //true false;
@@ -163,8 +162,7 @@ define([], function() {
 			for(var j=0;j<=N-1;j++){
 				renderData.rightList[j].propName=A[j];
 			}
-			console.log("比较长度",A.length,renderData.rightList.length);
-			console.log(renderData);
+			// console.log("比较长度",A.length,renderData.rightList.length);
 			return renderData;
 		}
 
@@ -249,9 +247,7 @@ define([], function() {
 			
 			var data=window.localStorage.getItem("compareArr");
 			data=JSON.parse(data);
-			console.log(data)
 			var L=data.length;
-			console.log(L)
 			var softStr="",softStrAll="",hardStr="",hardStrAll="";
 			for(var i=0;i<L;i++){
 				softStr=data[i]["cloudosclient_version"];
